@@ -1,0 +1,12 @@
+@use "./colors/sky.scss" as sky;
+@use "./variables.scss" as v;
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin border($property: border, $color: sky.$c5) {
+  #{$property}: v.$standard-border $color;
+}
