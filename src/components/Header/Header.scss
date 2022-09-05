@@ -1,0 +1,22 @@
+@use "../../scss/colors/sky.scss" as sky;
+
+.header {
+  padding: 5rem 0;
+
+  background-color: sky.$c10;
+  color: sky.$c0;
+
+  .header-container {
+    width: 85vw;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
