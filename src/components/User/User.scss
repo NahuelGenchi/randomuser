@@ -1,0 +1,59 @@
+@use "../../scss/colors/sky.scss" as sky;
+@use "../../scss/mixins.scss" as mixin;
+
+.user-container {
+  width: 85vw;
+  margin: 0 auto;
+  padding: 2rem;
+
+  background-color: sky.$c0;
+
+  .uc-img {
+    @include mixin.flex-center;
+
+    img {
+      width: 7rem;
+      border-radius: 50%;
+    }
+  }
+
+  .uc-info {
+    margin: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    text-align: center;
+
+    .uci-name {
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .uci-location {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      div:last-child {
+        color: gray;
+      }
+    }
+    
+    .uci-contact {
+      margin-top: 1rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .ucic-cell, .ucic-phone, .ucic-email {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

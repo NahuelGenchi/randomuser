@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { User } from "../index";
 
 import "./UserContainer.scss";
 
@@ -17,9 +18,7 @@ const UserContainer = () => {
 
   return(
     <div className="user-bcontainer">
-      <div className="user-container">
-        <div>Gender: {userData.gender}</div>
-      </div>
+      <User userData={userData} />
     </div>
   );
 };
