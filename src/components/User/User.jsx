@@ -5,6 +5,7 @@ const User = (props) => {
 
   return(
     <div className="user-container">
+      <div className="uc-divisor"></div>
       <div className="uc-img">
         <img src={picture?.medium} alt="Profile" />
       </div>

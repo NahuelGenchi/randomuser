@@ -5,15 +5,35 @@
   width: 85vw;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
+  border-radius: 5px;
 
   background-color: sky.$c0;
 
+  .uc-divisor {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 6rem;
+    margin: 0 auto;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    @include mixin.border(border-bottom, sky.$c10);
+
+    background-color: sky.$c8;
+  }
+
   .uc-img {
+    z-index: 9999;
+
     @include mixin.flex-center;
 
     img {
       width: 7rem;
       border-radius: 50%;
+      z-index: 9999;
     }
   }
 
