@@ -1,7 +1,7 @@
 import "./User.scss";
 
 const User = (props) => {
-  const { cell, dob, email, gender, location, login, name, nat, phone, picture } = props.userData;
+  const { cell, dob, email, location, name, phone, picture } = props.userData;
 
   return(
     <div className="user-container">
@@ -11,10 +11,15 @@ const User = (props) => {
       </div>
       <div className="uc-info">
         <div className="uci-name">{name?.first} {name?.last}</div>
-        <div className="uci-location">
-          <div>{location?.city}, {location?.country}</div>
-          <div>{location?.street.name} {location?.street.number}</div>
+        <div className="uci-dob">
+          <div>Age: {dob?.age}</div>
         </div>
+        <div className="uci-location">
+          <div></div>
+          <div>{location?.state}, {location?.country}</div>
+          <div>{location?.street.name} {location?.street.number}, {location?.city}</div>
+        </div>
+        <div className=""></div>
         <div className="uci-contact">
           <div className="ucic-cell">
             <ion-icon name="phone-portrait-outline"></ion-icon>
