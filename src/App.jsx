@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, UserContainer } from "./components";
+import { Header, UserContainer, Footer } from "./components";
 
 import "./scss/general.scss";
 
@@ -8,6 +8,7 @@ const App = () => {
     <>
       <Header/>
       <UserContainer/>
+      <Footer/>
     </>
   );
 }

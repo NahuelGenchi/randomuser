@@ -1,0 +1,15 @@
+.footer-bcontainer {
+  min-height: 15vh;
+  padding: 3rem 0;
+
+  .footer-container {
+    width: 85vw;
+    margin: 0 auto;
+
+    .fc-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
