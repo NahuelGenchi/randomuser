@@ -14,8 +14,6 @@ const UserContainer = () => {
     })
   }, []);
 
-  console.log(userData);
-
   return(
     <div className="user-bcontainer">
       <User userData={userData} />
